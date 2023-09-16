@@ -14,13 +14,16 @@ class MineButton : public QPushButton
 {
 Q_OBJECT
 public:
-
+private:
 enum ButtonStatus {_clickable, _clicked, _flaged};
+public:
 static constexpr ButtonStatus CLICKABLE = _clickable;
 static constexpr ButtonStatus CLICKED = _clicked;
 static constexpr ButtonStatus FLAGED = _flaged;
 
+private:
 enum ButtonColor {_blue, _green, _red, _darkBlue, _darkRed, _cyan, _purple, _black};
+public:
 static constexpr ButtonColor BLUE = _blue;
 static constexpr ButtonColor GREEN = _green;
 static constexpr ButtonColor RED = _red;
